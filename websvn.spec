@@ -1,7 +1,6 @@
 %define name	websvn
 %define version	2.0
-%define beta	rc1
-%define release	%mkrel 0.%{beta}.4
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -11,8 +10,8 @@ Epoch:		1
 License:	GPL
 Group:		System/Servers
 URL:		http://websvn.tigris.org/
-Source:		%{name}-%{version}%{beta}.tar.bz2
-Patch0:		websvn-2.0rc1.fhs.patch
+Source:		http://websvn.tigris.org/files/documents/1380/39378/%{name}-%{version}.tar.gz
+Patch0:		websvn-2.0.fhs.patch
 Requires:	subversion
 Requires:	apache-mod_php
 Requires:	php-iconv
@@ -48,8 +47,7 @@ WebSVN offers the following features:
     * Support for bugtraq:properties 
 
 %prep
-
-%setup -q -n %{name}-%{version}%{beta}
+%setup -q
 %patch0 -p1
 
 find . -type d -name .svn | xargs rm -rf
@@ -83,7 +81,7 @@ find templates -type f -a -not -name '*.tmpl' | \
     (cd %{buildroot}/var/www/%{name} && tar --preserve --extract)
 
 install -d -m 755 %{buildroot}%{_sysconfdir}
-mv %{buildroot}/%{_datadir}/%{name}/include/distconfig.inc \
+mv %{buildroot}/%{_datadir}/%{name}/include/distconfig.php \
    %{buildroot}%{_sysconfdir}/%{name}.conf
 
 install -d -m 755 %{buildroot}/var/cache/%{name}
@@ -122,10 +120,9 @@ rm -rf  %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc licence.txt install.txt
+%doc licence.txt changes.txt
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 %config(noreplace) %{_webappconfdir}/%{name}.conf
 %{_datadir}/%{name}
 /var/www/%{name}
 %attr(0755,apache,apache) /var/cache/%{name}
-
