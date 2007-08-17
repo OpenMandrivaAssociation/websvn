@@ -49,14 +49,6 @@ WebSVN offers the following features:
 %prep
 %setup -q
 %patch0 -p1
-
-find . -type d -name .svn | xargs rm -rf
-
-# fix encoding
-for file in `find . -type f`; do
-    perl -pi -e 'BEGIN {exit unless -T $ARGV[0];} s/\r\n$/\n/;' $file
-done
-
 find . -type d -exec chmod 755 {} \;
 find . -type f -exec chmod 644 {} \;
 
