@@ -23,6 +23,7 @@ Requires(postun):	rpm-helper >= 0.16
 BuildRequires:	rpm-helper >= 0.16
 BuildRequires:	rpm-mandriva-setup >= 1.23
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 WebSVN offers a view onto your subversion repositories that's been designed to
