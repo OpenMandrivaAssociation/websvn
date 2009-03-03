@@ -1,6 +1,6 @@
 %define name	websvn
-%define version	2.0
-%define release	%mkrel 4
+%define version	2.1.0
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -11,7 +11,7 @@ License:	GPL
 Group:		System/Servers
 URL:		http://websvn.tigris.org/
 Source:		http://websvn.tigris.org/files/documents/1380/39378/%{name}-%{version}.tar.gz
-Patch0:		websvn-2.0.fhs.patch
+Patch0:		websvn-2.1.0-fhs.patch
 Requires:	subversion
 Requires:	apache-mod_php
 Requires:	php-iconv
@@ -112,7 +112,7 @@ rm -rf  %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc licence.txt changes.txt
+%doc license.txt changes.txt
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 %config(noreplace) %{_webappconfdir}/%{name}.conf
 %{_datadir}/%{name}
