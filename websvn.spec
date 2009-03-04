@@ -1,6 +1,6 @@
 %define name	websvn
 %define version	2.1.0
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Name:		%{name}
 Version:	%{version}
@@ -61,6 +61,7 @@ install -d -m 755 %{buildroot}/var/www/%{name}
 cp -pr *.php %{buildroot}/var/www/%{name}
 
 install -d -m 755 %{buildroot}/%{_datadir}/%{name}
+cp -pr lib %{buildroot}/%{_datadir}/%{name}
 cp -pr include %{buildroot}/%{_datadir}/%{name}
 cp -pr languages %{buildroot}/%{_datadir}/%{name}
 
