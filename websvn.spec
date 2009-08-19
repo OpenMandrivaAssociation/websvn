@@ -1,6 +1,6 @@
 %define name	websvn
 %define version	2.2.1
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 %define _requires_exceptions pear(lib/geshi.php)
 
@@ -13,7 +13,8 @@ License:	GPL
 Group:		System/Servers
 URL:		http://websvn.tigris.org/
 Source:		http://websvn.tigris.org/files/documents/1380/39378/%{name}-%{version}.tar.gz
-Patch:      websvn-2.2.1-fhs.patch
+Patch0:     websvn-2.2.1-fhs.patch
+Patch1:     websvn-2.2.1-use-external-geshi.patch
 Requires:	subversion
 Requires:	apache-mod_php
 Requires:	php-iconv
@@ -51,7 +52,8 @@ WebSVN offers the following features:
 
 %prep
 %setup -q
-%patch -p 1
+%patch0 -p 1
+%patch1 -p 1
 
 %build
 
