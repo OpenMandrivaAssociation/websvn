@@ -1,6 +1,6 @@
 %define name	websvn
 %define version	2.2.1
-%define release	%mkrel 3
+%define release	%mkrel 4
 
 %define _requires_exceptions pear(.*geshi.php)
 
@@ -112,10 +112,14 @@ The setup used here differs from default one, to achieve better FHS compliance.
 EOF
 
 %post
+%if %mdkversion < 201010
 %_post_webapp
+%endif
 
 %postun
+%if %mdkversion < 201010
 %_postun_webapp
+%endif
 
 %clean
 rm -rf  %{buildroot} 
