@@ -1,6 +1,6 @@
 %define name	websvn
-%define version	2.2.1
-%define release	%mkrel 4
+%define version	2.3.0
+%define release	%mkrel 1
 
 %define _requires_exceptions pear(.*geshi.php)
 
@@ -13,19 +13,17 @@ License:	GPL
 Group:		System/Servers
 URL:		http://websvn.tigris.org/
 Source:		http://websvn.tigris.org/files/documents/1380/39378/%{name}-%{version}.tar.gz
-Patch0:     websvn-2.2.1-fhs.patch
-Patch1:     websvn-2.2.1-use-external-geshi.patch
+Patch0:     websvn-2.3.0-fhs.patch
+Patch1:     websvn-2.3.0-use-external-geshi.patch
 Requires:	subversion
 Requires:	apache-mod_php
 Requires:	php-iconv
 Requires:	php-xml
 Requires:	php-geshi
-Obsoletes:	WebSVN
-# webapp macros and scriptlets
-Requires(post):		rpm-helper >= 0.16
-Requires(postun):	rpm-helper >= 0.16
-BuildRequires:	rpm-helper >= 0.16
-BuildRequires:	rpm-mandriva-setup >= 1.23
+%if %mdkversion < 201010
+Requires(post):   rpm-helper
+Requires(postun):   rpm-helper
+%endif
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -64,9 +62,6 @@ install -d -m 755 %{buildroot}/%{_datadir}/%{name}
 install -d -m 755 %{buildroot}/%{_datadir}/%{name}/www
 cp -pr *.php %{buildroot}%{_datadir}/%{name}/www
 cp -pr templates %{buildroot}%{_datadir}/%{name}/www
-
-install -d -m 755 %{buildroot}/%{_datadir}/%{name}/lib
-cp lib/feedcreator.class.php %{buildroot}/%{_datadir}/%{name}/lib
 
 cp -pr include %{buildroot}%{_datadir}/%{name}
 cp -pr languages %{buildroot}%{_datadir}/%{name}
