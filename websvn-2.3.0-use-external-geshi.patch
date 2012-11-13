@@ -1,0 +1,21 @@
+diff -Naur -x '*~' -x '*.rej' -x '*.orig' websvn-2.3.0/include/svnlook.php websvn-2.3.0-use-external-geshi/include/svnlook.php
+--- websvn-2.3.0/include/svnlook.php	2009-12-04 06:53:49.000000000 +0100
++++ websvn-2.3.0-use-external-geshi/include/svnlook.php	2010-02-07 22:53:42.000000000 +0100
+@@ -667,7 +667,7 @@
+ 		foreach ($extGeshi as $language => $extensions) {
+ 			if (in_array($ext, $extensions)) {
+ 				if ($this->geshi === null) {
+-					require_once 'lib/geshi.php';
++					require_once 'geshi.php';
+ 					$this->geshi = new GeSHi();
+ 				} else {
+ 					$this->geshi->error = false;
+@@ -720,7 +720,7 @@
+ 
+ 		$source = file_get_contents($filename);
+ 		if ($this->geshi === null) {
+-			require_once 'lib/geshi.php';
++			require_once 'geshi.php';
+ 			$this->geshi = new GeSHi();
+ 		}
+ 		$this->geshi->set_source($source);

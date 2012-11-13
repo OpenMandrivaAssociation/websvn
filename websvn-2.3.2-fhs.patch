@@ -1,0 +1,276 @@
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/catalan.php websvn-2.3.2-fhs/languages/catalan.php
+--- websvn-2.3.2/languages/catalan.php	2010-01-10 00:34:21.000000000 +0000
++++ websvn-2.3.2-fhs/languages/catalan.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "No s'ha trobat cap camí";
+ $lang["NOACCESS"] = "No teniu els permisos necessaris per a llegir aquest directori";
+ $lang["RESTRICTED"] = "Accés restringit";
+-$lang["SUPPLYREP"] = "Definiu un camí per al dipòsit a include/config.php utilitzant \$config->parentPath o \$config->addRepository<p>Vegeu la guia d'instal·lació per a més detalls";
++$lang["SUPPLYREP"] = "Definiu un camí per al dipòsit a /etc/websvn.conf utilitzant \$config->parentPath o \$config->addRepository<p>Vegeu la guia d'instal·lació per a més detalls";
+ 
+ $lang["DIFFREVS"] = "Diferències entre revisions";
+ $lang["AND"] = "i";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/czech.php websvn-2.3.2-fhs/languages/czech.php
+--- websvn-2.3.2/languages/czech.php	2010-01-10 00:34:21.000000000 +0000
++++ websvn-2.3.2-fhs/languages/czech.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "Cesta nebyla nalezena";
+ $lang["NOACCESS"] = "Nemáte dostatečná přístupová práva pro čtení adresáře";
+ $lang["RESTRICTED"] = "Omezený přístup";
+-$lang["SUPPLYREP"] = "Nastavte prosím cestu k repozitáři v include/config.php pomocí \$config->parentPath nebo \$config->addRepository<p>Podívejte se do insatlační příručky pro podrobnější informace";
++$lang["SUPPLYREP"] = "Nastavte prosím cestu k repozitáři v /etc/websvn.conf pomocí \$config->parentPath nebo \$config->addRepository<p>Podívejte se do insatlační příručky pro podrobnější informace";
+ 
+ $lang["DIFFREVS"] = "Rozdíly mezi revizemi";
+ $lang["AND"] = "a";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/danish.php websvn-2.3.2-fhs/languages/danish.php
+--- websvn-2.3.2/languages/danish.php	2010-01-10 00:34:21.000000000 +0000
++++ websvn-2.3.2-fhs/languages/danish.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Stien blev ikke fundet";
+ $lang["NOACCESS"] = "Du har ikke de nødvendige rettigheder til at læse denne mappe";
+ $lang["RESTRICTED"] = "Begrænset adgang";
+-$lang["SUPPLYREP"] = "Konfigurer venligst stier til versionsarkiver i include/config.php ved at bruge \$config->parentPath eller \$config->addRepository<p>. Se installationsguiden for nærmere detaljer.";
++$lang["SUPPLYREP"] = "Konfigurer venligst stier til versionsarkiver i /etc/websvn.conf ved at bruge \$config->parentPath eller \$config->addRepository<p>. Se installationsguiden for nærmere detaljer.";
+ 
+ $lang["DIFFREVS"] = "Sammenlign revisionerne";
+ $lang["AND"] = "og";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/dutch.php websvn-2.3.2-fhs/languages/dutch.php
+--- websvn-2.3.2/languages/dutch.php	2010-12-10 13:37:57.000000000 +0000
++++ websvn-2.3.2-fhs/languages/dutch.php	2010-12-20 12:46:30.000000000 +0000
+@@ -38,7 +38,7 @@
+ $lang["NOPATH"] = "Pad niet gevonden";
+ // $lang["NOACCESS"] = "You do not have the necessary permissions to read this content";
+ // $lang["RESTRICTED"] = "Restricted access";
+-$lang["SUPPLYREP"] = "Gelieve een repositorypad aan te maken in include/config.php met behulp van \$config->parentPath of \$config->addRepository<p>Zie de installatiegids voor meer details";
++$lang["SUPPLYREP"] = "Gelieve een repositorypad aan te maken in /etc/websvn.conf met behulp van \$config->parentPath of \$config->addRepository<p>Zie de installatiegids voor meer details";
+ 
+ $lang["DIFFREVS"] = "Verschil tussen de revisies";
+ $lang["AND"] = "en";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/english.php websvn-2.3.2-fhs/languages/english.php
+--- websvn-2.3.2/languages/english.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/english.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "Path not found.";
+ $lang["NOACCESS"] = "You do not have the necessary permissions to view this content.";
+ $lang["RESTRICTED"] = "Restricted access.";
+-$lang["SUPPLYREP"] = "Please set up a repository in include/config.php using <code>\$config->parentPath</code> or <code>\$config->addRepository</code>. See the installation guide for more details.";
++$lang["SUPPLYREP"] = "Please set up a repository in /etc/websvn.conf using <code>\$config->parentPath</code> or <code>\$config->addRepository</code>. See the installation guide for more details.";
+ 
+ $lang["DIFFREVS"] = "Diff between revs";
+ $lang["AND"] = "and";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/finnish.php websvn-2.3.2-fhs/languages/finnish.php
+--- websvn-2.3.2/languages/finnish.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/finnish.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Polkua ei löydy";
+ // $lang["NOACCESS"] = "You do not have the necessary permissions to read this content";
+ // $lang["RESTRICTED"] = "Restricted access";
+-$lang["SUPPLYREP"] = "Aseta tietokannan polku tiedostossa include/config.php käyttäen muuttujaa \$config->parentPath tai \$config->addRepository<p>Katso asennusoppaasta yksityiskohtaiset ohjeet";
++$lang["SUPPLYREP"] = "Aseta tietokannan polku tiedostossa /etc/websvn.conf käyttäen muuttujaa \$config->parentPath tai \$config->addRepository<p>Katso asennusoppaasta yksityiskohtaiset ohjeet";
+ 
+ $lang["DIFFREVS"] = "Versioiden väliset muutokset";
+ $lang["AND"] = "ja";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/french.php websvn-2.3.2-fhs/languages/french.php
+--- websvn-2.3.2/languages/french.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/french.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Répertoire non trouvé.";
+ $lang["NOACCESS"] = "Vous n'avez pas la permission nécessaire pour accéder à ce répertoire.";
+ $lang["RESTRICTED"] = "Accès restreint.";
+-$lang["SUPPLYREP"] = "Veuillez indiquer le répertoire d'un dépôt dans le fichier include/config.php en utilisant <code>\$config->parentPath</code> ou <code>\$config->addRepository</code>. Lisez le guide d'installation pour plus de détails.";
++$lang["SUPPLYREP"] = "Veuillez indiquer le répertoire d'un dépôt dans le fichier /etc/websvn.conf en utilisant <code>\$config->parentPath</code> ou <code>\$config->addRepository</code>. Lisez le guide d'installation pour plus de détails.";
+ 
+ $lang["DIFFREVS"] = "Différences entre les révisions";
+ $lang["AND"] = "et";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/german.php websvn-2.3.2-fhs/languages/german.php
+--- websvn-2.3.2/languages/german.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/german.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "Pfad nicht gefunden";
+ $lang["NOACCESS"] = "Sie haben keine ausreichende Berechtigungen um diese Inhalte zu lesen";
+ $lang["RESTRICTED"] = "Beschränkter Zugriff";
+-$lang["SUPPLYREP"] = "Bitte den Repository-Pfad in include/config.php mit \$config->parentPath oder \$config->addRepository angeben.<p>Genauere Informationen finden sich in der Installationsanleitung";
++$lang["SUPPLYREP"] = "Bitte den Repository-Pfad in /etc/websvn.conf mit \$config->parentPath oder \$config->addRepository angeben.<p>Genauere Informationen finden sich in der Installationsanleitung";
+ 
+ $lang["DIFFREVS"] = "Vergleich zwischen Revisionen";
+ $lang["AND"] = "und";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/hebrew.php websvn-2.3.2-fhs/languages/hebrew.php
+--- websvn-2.3.2/languages/hebrew.php	2010-01-10 00:34:21.000000000 +0000
++++ websvn-2.3.2-fhs/languages/hebrew.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "נתיב לא נמצא";
+ $lang["NOACCESS"] = "אין לך את ההרשאות הנחוצות לתיקייה זו";
+ $lang["RESTRICTED"] = "גישה מוגבלת";
+-$lang["SUPPLYREP"] = 'אנא הוסף את הנתיב לגנזך ב include/config.php ע"י $config->parentPath או $config->addRepository<p>בדוק את מדריך ההתקנה עבור הפרטים';
++$lang["SUPPLYREP"] = 'אנא הוסף את הנתיב לגנזך ב /etc/websvn.conf ע"י $config->parentPath או $config->addRepository<p>בדוק את מדריך ההתקנה עבור הפרטים';
+ 
+ $lang["DIFFREVS"] = "שוני בין גרסאות";
+ $lang["AND"] = "ו";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/hungarian.php websvn-2.3.2-fhs/languages/hungarian.php
+--- websvn-2.3.2/languages/hungarian.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/hungarian.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "Az útvonal nem található";
+ $lang["NOACCESS"] = "Nincs megfelelő jogosultságod ahhoz, hogy olvasd ezt a könyvtárat";
+ $lang["RESTRICTED"] = "Korlátozott hozzáférés";
+-$lang["SUPPLYREP"] = "Kérlek, hogy állíts be legalább egy repository útvonalat az include/config.php file-ban a \$config->parentPath vagy \$config->addRepository használatával.<p>További részletekért nézd meg a telepítési kézikönyvet";
++$lang["SUPPLYREP"] = "Kérlek, hogy állíts be legalább egy repository útvonalat az /etc/websvn.conf file-ban a \$config->parentPath vagy \$config->addRepository használatával.<p>További részletekért nézd meg a telepítési kézikönyvet";
+ 
+ $lang["DIFFREVS"] = "Revíziók közti diff-ek";
+ $lang["AND"] = "és";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/indonesian.php websvn-2.3.2-fhs/languages/indonesian.php
+--- websvn-2.3.2/languages/indonesian.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/indonesian.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Path tidak ditemukan";
+ $lang["NOACCESS"] = "Anda tidak memiliki hak akses untuk masuk ke direktori ini";
+ $lang["RESTRICTED"] = "Akses terbatas";
+-$lang["SUPPLYREP"] = "Harap memberikan path ke repositori di file include/config.php, baik dengan \$config->parentPath atau pun \$config->addRepository<p>Lihat petunjuk instalasi untuk mendapatkan informasi yang lebih detail.";
++$lang["SUPPLYREP"] = "Harap memberikan path ke repositori di file /etc/websvn.conf, baik dengan \$config->parentPath atau pun \$config->addRepository<p>Lihat petunjuk instalasi untuk mendapatkan informasi yang lebih detail.";
+ 
+ $lang["DIFFREVS"] = "Perbedaan antar revisi";
+ $lang["AND"] = "dan";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/italian.php websvn-2.3.2-fhs/languages/italian.php
+--- websvn-2.3.2/languages/italian.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/italian.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Percorso non trovato";
+ $lang["NOACCESS"] = "Non hai i permessi necessari per leggere questa directory";
+ $lang["RESTRICTED"] = "Accesso limitato";
+-$lang["SUPPLYREP"] = "Configurare un percorso ai repository in include/config.inc usando \$config->parentPath o \$config->addRepository<p>Per maggiori dettagli consultare la guida d'installazione";
++$lang["SUPPLYREP"] = "Configurare un percorso ai repository in /etc/websvn.conf usando \$config->parentPath o \$config->addRepository<p>Per maggiori dettagli consultare la guida d'installazione";
+ 
+ $lang["DIFFREVS"] = "Differenze tra le revisioni";
+ $lang["AND"] = "e";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/japanese.php websvn-2.3.2-fhs/languages/japanese.php
+--- websvn-2.3.2/languages/japanese.php	2010-01-10 00:34:21.000000000 +0000
++++ websvn-2.3.2-fhs/languages/japanese.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "パスが見付かりません";
+ // $lang["NOACCESS"] = "You do not have the necessary permissions to read this content";
+ $lang["RESTRICTED"] = "アクセスが制限されています";
+-$lang["SUPPLYREP"] = "ファイル include/config.php 内に \$config->parentPath もしくは \$config->addRepository を使用してリポジトリパスを設定してください。<p>詳しくはインストールガイドを参照してください。";
++$lang["SUPPLYREP"] = "ファイル /etc/websvn.conf 内に \$config->parentPath もしくは \$config->addRepository を使用してリポジトリパスを設定してください。<p>詳しくはインストールガイドを参照してください。";
+ 
+ $lang["DIFFREVS"] = "リビジョン間の差分";
+ $lang["AND"] = "と";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/korean.php websvn-2.3.2-fhs/languages/korean.php
+--- websvn-2.3.2/languages/korean.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/korean.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "경로를 찾을 수 없습니다.";
+ // $lang["NOACCESS"] = "You do not have the necessary permissions to read this content";
+ // $lang["RESTRICTED"] = "Restricted access";
+-$lang["SUPPLYREP"] = "include/config.php 파일의 \$config->parentPath 또는 \$config->addRepository에 저장소의 경로를 지정해 주십시오.<p>설치 설명서를 참조해 주십시오.";
++$lang["SUPPLYREP"] = "/etc/websvn.conf 파일의 \$config->parentPath 또는 \$config->addRepository에 저장소의 경로를 지정해 주십시오.<p>설치 설명서를 참조해 주십시오.";
+ 
+ $lang["DIFFREVS"] = "리비전간 비교";
+ $lang["AND"] = "와(과)";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/norwegian.php websvn-2.3.2-fhs/languages/norwegian.php
+--- websvn-2.3.2/languages/norwegian.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/norwegian.php	2010-12-20 12:45:28.000000000 +0000
+@@ -41,7 +41,7 @@
+ $lang["NOPATH"] = "Stien ble ikke funnet";
+ // $lang["NOACCESS"] = "You do not have the necessary permissions to read this content";
+ // $lang["RESTRICTED"] = "Restricted access";
+-$lang["SUPPLYREP"] = "Vennligst sett opp en depotsti i include/config.php ved hjelp av \$config->parentPath eller \$config->addRepository.<p>Se installasjonsguiden for detaljer.";
++$lang["SUPPLYREP"] = "Vennligst sett opp en depotsti i /etc/websvn.conf ved hjelp av \$config->parentPath eller \$config->addRepository.<p>Se installasjonsguiden for detaljer.";
+ 
+ $lang["DIFFREVS"] = "Diff mellom revisjoner";
+ $lang["AND"] = "og";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/polish.php websvn-2.3.2-fhs/languages/polish.php
+--- websvn-2.3.2/languages/polish.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/polish.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ // $lang["NOACCESS"] = "You do not have the necessary permissions to read this content";
+ // $lang["RESTRICTED"] = "Restricted access";
+ $lang["SUPPLYREP"] = "Proszę ustawić ścieżkę do repozytoriów w
+-include/config.php za pomocą \$config->parentPath lub
++/etc/websvn.conf za pomocą \$config->parentPath lub
+ \$config->addRepository<p>Aby uzyskać więcej szczegółów zapoznaj się z
+ podręcznikiem instalacyjnym";
+ 
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/russian.php websvn-2.3.2-fhs/languages/russian.php
+--- websvn-2.3.2/languages/russian.php	2010-12-10 13:37:57.000000000 +0000
++++ websvn-2.3.2-fhs/languages/russian.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Путь не найден";
+ $lang["NOACCESS"] = "Для чтения этого каталога у вас нет нужных прав";
+ $lang["RESTRICTED"] = "Ограниченный доступ";
+-$lang["SUPPLYREP"] = "Пожалуйста, настройте путь к хранилищу в include/config.php, пользуясь \$config->parentPath или \$config->addRepository<p>Дополнительные сведения приведены в руководстве по установке ";
++$lang["SUPPLYREP"] = "Пожалуйста, настройте путь к хранилищу в /etc/websvn.conf, пользуясь \$config->parentPath или \$config->addRepository<p>Дополнительные сведения приведены в руководстве по установке ";
+ 
+ $lang["DIFFREVS"] = "Различия между редакциями";
+ $lang["AND"] = "и";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/slovak.php websvn-2.3.2-fhs/languages/slovak.php
+--- websvn-2.3.2/languages/slovak.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/slovak.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "Cesta nebola nájdená";
+ $lang["NOACCESS"] = "Nemáte oprávnenie pre čítanie tohto adresára";
+ $lang["RESTRICTED"] = "Obmedzený prístup";
+-$lang["SUPPLYREP"] = "Prosím nastavte cestu k úložisku v include/config.php pomocou \$config->parentPath alebo \$config->addRepository<p>Pre ďalšie detaily konzultujte inštalačnú príručku";
++$lang["SUPPLYREP"] = "Prosím nastavte cestu k úložisku v /etc/websvn.conf pomocou \$config->parentPath alebo \$config->addRepository<p>Pre ďalšie detaily konzultujte inštalačnú príručku";
+ 
+ $lang["DIFFREVS"] = "Rozdiel medzi revíziami";
+ $lang["AND"] = "a";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/slovenian.php websvn-2.3.2-fhs/languages/slovenian.php
+--- websvn-2.3.2/languages/slovenian.php	2010-04-20 11:17:24.000000000 +0000
++++ websvn-2.3.2-fhs/languages/slovenian.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Ne najdem poti";
+ $lang["NOACCESS"] = "Nimate dovolj pravic za branje tega direktorija";
+ $lang["RESTRICTED"] = "Dostop zavrnjen";
+-$lang["SUPPLYREP"] = "Prosim nastavi pot do skladišča v include/config.php z \$config->parentPath ali \$config->addRepository<p>Poglej navodila za detajle";
++$lang["SUPPLYREP"] = "Prosim nastavi pot do skladišča v /etc/websvn.conf z \$config->parentPath ali \$config->addRepository<p>Poglej navodila za detajle";
+ 
+ $lang["DIFFREVS"] = "Razlike med različicama";
+ $lang["AND"] = "in";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/spanish.php websvn-2.3.2-fhs/languages/spanish.php
+--- websvn-2.3.2/languages/spanish.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/spanish.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "Ruta no encontrada";
+ // $lang["NOACCESS"] = "You do not have the necessary permissions to read this content";
+ // $lang["RESTRICTED"] = "Restricted access";
+-$lang["SUPPLYREP"] = "Por favor, configure una ruta a un repositorio en include/config.php usando \$config->parentPath o \$config->addRepository<p>Verifique la guía de instalación para mas detalles";
++$lang["SUPPLYREP"] = "Por favor, configure una ruta a un repositorio en /etc/websvn.conf usando \$config->parentPath o \$config->addRepository<p>Verifique la guía de instalación para mas detalles";
+ 
+ $lang["DIFFREVS"] = "Diff entre versiones";
+ $lang["AND"] = "y";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/swedish.php websvn-2.3.2-fhs/languages/swedish.php
+--- websvn-2.3.2/languages/swedish.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/swedish.php	2010-12-20 12:45:28.000000000 +0000
+@@ -35,7 +35,7 @@
+ $lang["NOPATH"] = "Sökvägen saknas";
+ $lang["NOACCESS"] = "Du har inte tillräckliga rättigheter för att läsa i denna arkivsökväg";
+ $lang["RESTRICTED"] = "Rättighetsbegränsad";
+-$lang["SUPPLYREP"] = "Vänligen sätt upp en sökväg till arkivet i include/config.php med \$config->parentPath eller \$config->addRepository<p>Se installationsanvisningen för mer detaljer";
++$lang["SUPPLYREP"] = "Vänligen sätt upp en sökväg till arkivet i /etc/websvn.conf med \$config->parentPath eller \$config->addRepository<p>Se installationsanvisningen för mer detaljer";
+ 
+ $lang["DIFFREVS"] = "Skillnad mellan rev.";
+ $lang["AND"] = "och";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/turkish.php websvn-2.3.2-fhs/languages/turkish.php
+--- websvn-2.3.2/languages/turkish.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/turkish.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Patika bulunamadı";
+ // $lang["NOACCESS"] = "You do not have the necessary permissions to read this content";
+ // $lang["RESTRICTED"] = "Restricted access";
+-$lang["SUPPLYREP"] = "Lütfen, include/config.php dosyasında \$config->parentPath ya da \$config->addRepository değerlerini kullanarak bir depo yolu belirtin<p>Daha fazla bilgi için kurulum kılavuzuna bakın";
++$lang["SUPPLYREP"] = "Lütfen, /etc/websvn.conf dosyasında \$config->parentPath ya da \$config->addRepository değerlerini kullanarak bir depo yolu belirtin<p>Daha fazla bilgi için kurulum kılavuzuna bakın";
+ 
+ $lang["DIFFREVS"] = "Sürümler arası fark";
+ $lang["AND"] = "ve";
+diff -Naur -x '*.rej' -x '*.orig' -x '*~' websvn-2.3.2/languages/uzbek.php websvn-2.3.2-fhs/languages/uzbek.php
+--- websvn-2.3.2/languages/uzbek.php	2010-02-18 08:21:06.000000000 +0000
++++ websvn-2.3.2-fhs/languages/uzbek.php	2010-12-20 12:45:28.000000000 +0000
+@@ -36,7 +36,7 @@
+ $lang["NOPATH"] = "Yoʻl topilmadi";
+ $lang["NOACCESS"] = "Bu katalogni oʻqish uchun sizga ruxsat berilmagan";
+ $lang["RESTRICTED"] = "Cheklangan ruxsat";
+-$lang["SUPPLYREP"] = "Iltimos, repositoriylargacha boʻlgan yoʻlni include/config.php faylida koʻrsating, bunda \$config->parentPath yoki \$config->addRepository<p> dan foydalanishingiz mumkin. Qoʻshimcha maʼlumotlar oʻrnatish boʻyicha qoʻllanmada keltirilgan";
++$lang["SUPPLYREP"] = "Iltimos, repositoriylargacha boʻlgan yoʻlni /etc/websvn.conf faylida koʻrsating, bunda \$config->parentPath yoki \$config->addRepository<p> dan foydalanishingiz mumkin. Qoʻshimcha maʼlumotlar oʻrnatish boʻyicha qoʻllanmada keltirilgan";
+ 
+ $lang["DIFFREVS"] = "Tahrirlar orasidagi farq";
+ $lang["AND"] = "va";
