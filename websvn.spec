@@ -1,6 +1,6 @@
 %define name	websvn
 %define version	2.3.2
-%define release	%mkrel 1
+%define release:	2
 
 %define _requires_exceptions pear(.*geshi.php)
 
@@ -106,15 +106,7 @@ The setup used here differs from default one, to achieve better FHS compliance.
 - the configuration file is /etc/websvn.conf
 EOF
 
-%post
-%if %mdkversion < 201010
-%_post_webapp
-%endif
 
-%postun
-%if %mdkversion < 201010
-%_postun_webapp
-%endif
 
 %clean
 rm -rf  %{buildroot} 
