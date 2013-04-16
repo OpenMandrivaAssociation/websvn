@@ -1,12 +1,6 @@
-%define name	websvn
-%define version	2.3.2
-%define release:	3
-
-%define _requires_exceptions pear(.*geshi.php)
-
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		websvn
+Version:	2.3.2
+Release:	3
 Summary:	PHP based web interface of Subversion repositories
 Epoch:		1
 License:	GPL
@@ -20,12 +14,7 @@ Requires:	apache-mod_php
 Requires:	php-iconv
 Requires:	php-xml
 Requires:	php-geshi
-%if %mdkversion < 201010
-Requires(post):   rpm-helper
-Requires(postun):   rpm-helper
-%endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 WebSVN offers a view onto your subversion repositories that's been designed to
