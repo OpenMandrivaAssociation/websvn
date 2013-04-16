@@ -1,6 +1,6 @@
 %define name	websvn
 %define version	2.3.2
-%define release:	2
+%define release:	3
 
 %define _requires_exceptions pear(.*geshi.php)
 
