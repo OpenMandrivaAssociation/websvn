@@ -1,6 +1,6 @@
 Name:		websvn
 Version:	2.3.2
-Release:	3
+Release:	4
 Summary:	PHP based web interface of Subversion repositories
 Epoch:		1
 License:	GPL
@@ -45,8 +45,6 @@ WebSVN offers the following features:
 %build
 
 %install
-rm -rf %{buildroot}
-
 install -d -m 755 %{buildroot}/%{_datadir}/%{name}
 install -d -m 755 %{buildroot}/%{_datadir}/%{name}/www
 cp -pr *.php %{buildroot}%{_datadir}/%{name}/www
@@ -80,7 +78,7 @@ Alias /%{name} %{_datadir}/%{name}/www
 
 <Directory %{_datadir}/%{name}/www>
     Options -FollowSymLinks
-    allow from all
+    Require all granted
 </Directory>
 EOF
 
@@ -97,11 +95,7 @@ EOF
 
 
 
-%clean
-rm -rf  %{buildroot} 
-
 %files
-%defattr(-,root,root)
 %doc license.txt changes.txt
 %config(noreplace) %{_sysconfdir}/%{name}.conf
 %config(noreplace) %{_webappconfdir}/%{name}.conf
