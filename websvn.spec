@@ -1,6 +1,6 @@
 Name:		websvn
 Version:	2.3.2
-Release:	4
+Release:	5
 Summary:	PHP based web interface of Subversion repositories
 Epoch:		1
 License:	GPL
